@@ -3,7 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path(""),
-    path("posts"),
-    path("posts/<slug:slug>") # slug : words, -, _, numbers
+    path("", views.starting_page),
+    path("posts", views.posts),
+    path("posts/<slug:slug>", views.post_detail) # slug : words, -, _, numbers
 ]
