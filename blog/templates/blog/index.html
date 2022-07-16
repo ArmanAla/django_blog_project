@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block css_files %}
-    {% static "blog/index.css" %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" >
 {% endblock %}
 
 {% block content %}
@@ -24,7 +24,7 @@
         <p>Hi, I am Max and I love to blog about tech and the world!</p>
       </section>
       
-      <section id="latest-posts">
+      <section id="latest-posts" >
         <h2>My Latest Thoughts</h2>
       
         <ul>
