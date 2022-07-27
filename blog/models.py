@@ -5,6 +5,13 @@ from django.core.validators import MinLengthValidator
 
 class Tag(models.Model):
     caption = models.CharField(max_length=20)
+    
+    def tag_type(self):
+        return f"{self.caption}"
+    
+    
+    def __str__(self):
+        return self.tag_type()
 
 
 class Author(models.Model):
