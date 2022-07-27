@@ -24,7 +24,8 @@ class Author(models.Model):
     
     
     def __str__(self):
-        return self.full_name
+        return self.full_name()
+
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
