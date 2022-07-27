@@ -26,5 +26,3 @@ class Post(models.Model):
 
 
 
-
-
